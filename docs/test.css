@@ -13,13 +13,13 @@
   color: #fff;
 }
 
-@keyframes fade-in {
+@keyframes webkit-sassui-toast-fade-in {
   to {
     background: rgba(0, 0, 0, 0.8);
   }
 }
 
-@keyframes fade-out {
+@keyframes webkit-sassui-toast-fade-out {
   from {
     background: rgba(0, 0, 0, 0.8);
   }
@@ -30,15 +30,24 @@
 
 .webkit-sassui-toast.visible-true, .webkit-sassui-toast[data-visible=true] {
   background: transparent;
-  animation: fade-in 300ms ease-in forwards;
+  animation: webkit-sassui-toast-fade-in 300ms ease-in forwards;
 }
 
 .webkit-sassui-toast, .webkit-sassui-toast.visible-false, .webkit-sassui-toast[data-visible=false] {
-  animation: fade-out 300ms ease-in forwards;
+  animation: webkit-sassui-toast-fade-out 300ms ease-in forwards;
 }
 
 /*webkit-sassui-toast End*/
 .test-webkit-sassui-toast {
   width: 200px;
-  border: 1px solid red;
+}
+
+#btn {
+  width: 100%;
+  background: #4cd964;
+  border: none;
+  padding: 14px;
+  text-align: center;
+  position: absolute;
+  top: 38.2%;
 }

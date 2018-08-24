@@ -12,19 +12,19 @@
   transform: translate(-50%, -50%);
   color: #fff; }
 
-@keyframes fade-in {
+@keyframes webkit-sassui-toast-fade-in {
   to {
     background: rgba(0, 0, 0, 0.8); } }
 
-@keyframes fade-out {
+@keyframes webkit-sassui-toast-fade-out {
   from {
     background: rgba(0, 0, 0, 0.8); }
   to {
     background: transparent; } }
   .webkit-sassui-toast.visible-true, .webkit-sassui-toast[data-visible=true] {
     background: transparent;
-    animation: fade-in 300ms ease-in forwards; }
+    animation: webkit-sassui-toast-fade-in 300ms ease-in forwards; }
   .webkit-sassui-toast, .webkit-sassui-toast.visible-false, .webkit-sassui-toast[data-visible=false] {
-    animation: fade-out 300ms ease-in forwards; }
+    animation: webkit-sassui-toast-fade-out 300ms ease-in forwards; }
 
 /*webkit-sassui-toast End*/
