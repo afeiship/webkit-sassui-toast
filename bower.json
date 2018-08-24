@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-toast",
+  "description": "Toast sass style",
+  "main": [
+    "dist/webkit-sassui-toast.css",
+    "dist/webkit-sassui-toast.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "toast"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-toast",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

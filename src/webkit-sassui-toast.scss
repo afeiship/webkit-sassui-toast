@@ -1,0 +1,54 @@
+/*webkit-sassui-toast Start*/
+$webkit-sassui-toast-options:(
+  width: 50%,
+  opacity: 0.8,
+  z-index: 90,
+  duration: 300ms
+)!default;
+
+.webkit-sassui-toast{
+
+  $width: map-get($map: $webkit-sassui-toast-options, $key: width );
+  $opacity: map-get($map: $webkit-sassui-toast-options, $key: opacity );
+  $z-index: map-get($map: $webkit-sassui-toast-options, $key: z-index );
+  $duration: map-get($map: $webkit-sassui-toast-options, $key: duration );
+
+  width: $width;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  top: 38.2%;
+  left: 50%;
+  position: fixed;
+  font-size: 14px;
+  z-index: $z-index;
+  transform: translate(-50%, -50%);
+  color: #fff;
+
+  @keyframes fade-in {
+    to {
+      background: rgba(#000, $opacity);
+    }
+  }
+  @keyframes fade-out {
+    from {
+      background: rgba(#000, $opacity);
+    }
+    to {
+      background: rgba(#000, 0);
+    }
+  }
+
+  &.visible-true,
+  &[data-visible=true] {
+    background: rgba(#000, 0);
+    animation: fade-in $duration ease-in forwards;
+  }
+
+  &,
+  &.visible-false,
+  &[data-visible=false] {
+    animation: fade-out $duration ease-in forwards;
+  }
+}
+/*webkit-sassui-toast End*/
