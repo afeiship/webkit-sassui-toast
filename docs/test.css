@@ -1,0 +1,44 @@
+/*webkit-sassui-toast Start*/
+.webkit-sassui-toast {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  top: 38.2%;
+  left: 50%;
+  position: fixed;
+  font-size: 14px;
+  z-index: 90;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+@keyframes fade-in {
+  to {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  to {
+    background: transparent;
+  }
+}
+
+.webkit-sassui-toast.visible-true, .webkit-sassui-toast[data-visible=true] {
+  background: transparent;
+  animation: fade-in 300ms ease-in forwards;
+}
+
+.webkit-sassui-toast, .webkit-sassui-toast.visible-false, .webkit-sassui-toast[data-visible=false] {
+  animation: fade-out 300ms ease-in forwards;
+}
+
+/*webkit-sassui-toast End*/
+.test-webkit-sassui-toast {
+  width: 200px;
+  border: 1px solid red;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,36 @@
   <title>webkit-sassui-toast</title>
   <link rel="stylesheet" href="./test.css">
 </head>
-<body>
 
+<body>
+  <button id="btn">SHOW Toast</button>
+  <div id="toast" class="webkit-sassui-toast test-webkit-sassui-toast" data-visible="false" hidden>
+    I am the tost text! <br>
+    I am the tost text! <br>
+    I am the tost text! <br>
+  </div>
+
+  <script>
+    var el = document.getElementById('toast');
+    var btn = document.getElementById('btn');
+
+    el.addEventListener('webkitAnimationEnd', function () {
+      console.log('animateionend...');
+      if (el.getAttribute('data-visible') == 'false') {
+        el.setAttribute('hidden', true);
+      }
+    });
+
+    btn.onclick = function () {
+      el.removeAttribute('hidden');
+      el.setAttribute('data-visible', true);
+
+      setTimeout(() => {
+        el.setAttribute('data-visible', false);
+      }, 1000)
+    }
+
+  </script>
 </body>
+
 </html>
