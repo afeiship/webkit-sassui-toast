@@ -3,6 +3,7 @@ $webkit-sassui-toast-options:(
   width: 50%,
   opacity: 0.8,
   z-index: 90,
+  border-radius: 10px,
   duration: 300ms
 )!default;
 
@@ -10,13 +11,14 @@ $webkit-sassui-toast-options:(
 
   $width: map-get($map: $webkit-sassui-toast-options, $key: width );
   $opacity: map-get($map: $webkit-sassui-toast-options, $key: opacity );
+  $border-radius: map-get($map: $webkit-sassui-toast-options, $key: border-radius );
   $z-index: map-get($map: $webkit-sassui-toast-options, $key: z-index );
   $duration: map-get($map: $webkit-sassui-toast-options, $key: duration );
 
   width: $width;
   padding: 10px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: $border-radius;
   top: 38.2%;
   left: 50%;
   position: fixed;

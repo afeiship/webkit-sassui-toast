@@ -8,7 +8,9 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "test": "gulp test",
+    "release": "gulp && gulp test"
   },
   "main": "dist/webkit-sassui-toast.scss",
   "license": "MIT",
