@@ -1,19 +1,34 @@
 /*webkit-sassui-toast Start*/
-$webkit-sassui-toast-options:(
+$webkit-sassui-toast-options: (
   width: 50%,
   opacity: 0.8,
   z-index: 90,
   border-radius: 10px,
   duration: 300ms
-)!default;
+) !default;
 
-.webkit-sassui-toast{
+.webkit-sassui-toast {
 
-  $width: map-get($map: $webkit-sassui-toast-options, $key: width );
-  $opacity: map-get($map: $webkit-sassui-toast-options, $key: opacity );
-  $border-radius: map-get($map: $webkit-sassui-toast-options, $key: border-radius );
-  $z-index: map-get($map: $webkit-sassui-toast-options, $key: z-index );
-  $duration: map-get($map: $webkit-sassui-toast-options, $key: duration );
+  $width: map-get(
+    $map: $webkit-sassui-toast-options,
+    $key: width
+  );
+  $opacity: map-get(
+    $map: $webkit-sassui-toast-options,
+    $key: opacity
+  );
+  $border-radius: map-get(
+    $map: $webkit-sassui-toast-options,
+    $key: border-radius
+  );
+  $z-index: map-get(
+    $map: $webkit-sassui-toast-options,
+    $key: z-index
+  );
+  $duration: map-get(
+    $map: $webkit-sassui-toast-options,
+    $key: duration
+  );
 
   width: $width;
   padding: 10px;
@@ -42,14 +57,14 @@ $webkit-sassui-toast-options:(
   }
 
   &.visible-true,
-  &[data-visible=true] {
+  &[data-visible="true"] {
     background: rgba(#000, 0);
     animation: webkit-sassui-toast-fade-in $duration ease-in forwards;
   }
 
   &,
   &.visible-false,
-  &[data-visible=false] {
+  &[data-visible="false"] {
     animation: webkit-sassui-toast-fade-out $duration ease-in forwards;
   }
 }
