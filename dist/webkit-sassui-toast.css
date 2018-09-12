@@ -1,6 +1,7 @@
 /*webkit-sassui-toast Start*/
 .webkit-sassui-toast {
-  width: 50%;
+  min-width: 100px;
+  max-width: 300px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;

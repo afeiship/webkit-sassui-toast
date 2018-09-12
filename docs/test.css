@@ -1,6 +1,7 @@
 /*webkit-sassui-toast Start*/
 .webkit-sassui-toast {
-  width: 50%;
+  min-width: 100px;
+  max-width: 300px;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -28,18 +29,19 @@
   }
 }
 
-.webkit-sassui-toast.visible-true, .webkit-sassui-toast[data-visible=true] {
+.webkit-sassui-toast.visible-true, .webkit-sassui-toast[data-visible="true"] {
   background: transparent;
   animation: webkit-sassui-toast-fade-in 300ms ease-in forwards;
 }
 
-.webkit-sassui-toast, .webkit-sassui-toast.visible-false, .webkit-sassui-toast[data-visible=false] {
+.webkit-sassui-toast, .webkit-sassui-toast.visible-false, .webkit-sassui-toast[data-visible="false"] {
   animation: webkit-sassui-toast-fade-out 300ms ease-in forwards;
 }
 
 /*webkit-sassui-toast End*/
-.test-webkit-sassui-toast {
-  width: 200px;
+button {
+  border: none;
+  outline: none;
 }
 
 #btn {

@@ -1,8 +1,12 @@
 @import "../dist/webkit-sassui-toast.scss";
 .test-webkit-sassui-toast{
-  width: 200px;
+  // width: 200px;
 }
 
+button{
+  border: none;
+  outline: none;
+}
 
 #btn{
   width:90%;
