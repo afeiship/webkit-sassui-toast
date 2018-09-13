@@ -36,6 +36,8 @@ $webkit-sassui-toast-options: (
 
   min-width: $min-width;
   max-width: $max-width;
+  user-select: none;
+  -webkit-user-select: none;
   padding: 10px;
   box-sizing: border-box;
   border-radius: $border-radius;
