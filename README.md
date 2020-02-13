@@ -1,8 +1,21 @@
 # webkit-sassui-toast
-> Toast sass style
+> Toast sass style.
 
-## usage:
+## installation
+```shell
+npm i -S @feizheng/webkit-sassui-toast
+```
+
+## usage
 + https://afeiship.github.io/webkit-sassui-toast/
 
-## resources:
+```scss
+// in sass file:
+@import 'node_modules/webkit-sassui-toast/dist/index.scss';
+
+// webkit
+@import '~@feizheng/webkit-sassui-toast';
+```
+
+## resources
 + https://github.com/afeiship/generator-webkit-sassui

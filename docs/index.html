@@ -21,7 +21,6 @@
     var btn = document.getElementById('btn');
 
     el.addEventListener('webkitAnimationEnd', function () {
-      console.log('animateionend...');
       if (el.getAttribute('data-visible') == 'false') {
         el.setAttribute('hidden', true);
       }

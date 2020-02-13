@@ -2,7 +2,9 @@
 .webkit-sassui-toast {
   min-width: 100px;
   max-width: 300px;
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   padding: 10px;
   box-sizing: border-box;
@@ -15,19 +17,31 @@
   transform: translate(-50%, -50%);
   color: #fff; }
 
+@-webkit-keyframes webkit-sassui-toast-fade-in {
+  to {
+    background: rgba(0, 0, 0, 0.8); } }
+
 @keyframes webkit-sassui-toast-fade-in {
   to {
     background: rgba(0, 0, 0, 0.8); } }
+
+@-webkit-keyframes webkit-sassui-toast-fade-out {
+  from {
+    background: rgba(0, 0, 0, 0.8); }
+  to {
+    background: rgba(0, 0, 0, 0); } }
 
 @keyframes webkit-sassui-toast-fade-out {
   from {
     background: rgba(0, 0, 0, 0.8); }
   to {
-    background: transparent; } }
+    background: rgba(0, 0, 0, 0); } }
   .webkit-sassui-toast.visible-true, .webkit-sassui-toast[data-visible="true"] {
-    background: transparent;
-    animation: webkit-sassui-toast-fade-in 300ms ease-in forwards; }
+    background: rgba(0, 0, 0, 0);
+    -webkit-animation: webkit-sassui-toast-fade-in 300ms ease-in forwards;
+            animation: webkit-sassui-toast-fade-in 300ms ease-in forwards; }
   .webkit-sassui-toast, .webkit-sassui-toast.visible-false, .webkit-sassui-toast[data-visible="false"] {
-    animation: webkit-sassui-toast-fade-out 300ms ease-in forwards; }
+    -webkit-animation: webkit-sassui-toast-fade-out 300ms ease-in forwards;
+            animation: webkit-sassui-toast-fade-out 300ms ease-in forwards; }
 
 /*webkit-sassui-toast End*/

@@ -1,7 +1,7 @@
 {
-  "name": "webkit-sassui-toast",
-  "version": "0.0.0",
-  "description": "Toast sass style",
+  "name": "@feizheng/webkit-sassui-toast",
+  "version": "1.0.0",
+  "description": "Toast sass style.",
   "homepage": "https://github.com/afeiship/webkit-sassui-toast",
   "author": {
     "name": "afei",
@@ -9,17 +9,24 @@
   },
   "scripts": {
     "build": "gulp",
+    "start": "node server.js",
     "test": "gulp test",
     "release": "gulp && gulp test"
   },
-  "main": "dist/webkit-sassui-toast.scss",
+  "main": "dist/index.scss",
   "license": "MIT",
   "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "yargs": "^4.7.1"
+    "@feizheng/rake-git": "^1.2.1",
+    "autoprefixer": "^9.7.2",
+    "del": "^5.1.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

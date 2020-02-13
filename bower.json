@@ -1,6 +1,6 @@
 {
   "name": "webkit-sassui-toast",
-  "description": "Toast sass style",
+  "description": "Toast sass style.",
   "main": [
     "dist/webkit-sassui-toast.css",
     "dist/webkit-sassui-toast.scss"
@@ -12,7 +12,7 @@
   "keywords": [
     "webkit",
     "cssui",
-    "toast"
+    "sassui"
   ],
   "homepage": "https://github.com/afeiship/webkit-sassui-toast",
   "moduleType": [
