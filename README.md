@@ -3,7 +3,7 @@
 
 ## installation
 ```shell
-npm i -S @feizheng/webkit-sassui-toast
+npm i @feizheng/webkit-sassui-toast
 ```
 
 ## usage
