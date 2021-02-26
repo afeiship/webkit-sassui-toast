@@ -1,14 +1,14 @@
 /*!
- * name: @feizheng/webkit-sassui-toast
+ * name: @jswork/wsui-toast
  * description: Toast sass style.
- * url: https://github.com/afeiship/webkit-sassui-toast
+ * homepage: https://github.com/afeiship/wsui-toast
  * version: 1.0.0
- * date: 2020-02-13 15:09:46
+ * date: 2021-02-26 21:43:56
  * license: MIT
  */
 
-/*webkit-sassui-toast Start*/
-$webkit-sassui-toast-options: (
+/*wsui-toast Start*/
+$wsui-toast-options: (
   min-width: 100px,
   max-width: 300px,
   opacity: 0.8,
@@ -17,31 +17,13 @@ $webkit-sassui-toast-options: (
   duration: 300ms
 ) !default;
 
-.webkit-sassui-toast {
-  $min-width: map-get(
-    $map: $webkit-sassui-toast-options,
-    $key: min-width
-  );
-  $max-width: map-get(
-    $map: $webkit-sassui-toast-options,
-    $key: max-width
-  );
-  $opacity: map-get(
-    $map: $webkit-sassui-toast-options,
-    $key: opacity
-  );
-  $border-radius: map-get(
-    $map: $webkit-sassui-toast-options,
-    $key: border-radius
-  );
-  $z-index: map-get(
-    $map: $webkit-sassui-toast-options,
-    $key: z-index
-  );
-  $duration: map-get(
-    $map: $webkit-sassui-toast-options,
-    $key: duration
-  );
+.wsui-toast {
+  $min-width: map-get( $map: $wsui-toast-options, $key: min-width );
+  $max-width: map-get( $map: $wsui-toast-options, $key: max-width );
+  $opacity: map-get( $map: $wsui-toast-options, $key: opacity );
+  $border-radius: map-get( $map: $wsui-toast-options, $key: border-radius );
+  $z-index: map-get( $map: $wsui-toast-options, $key: z-index );
+  $duration: map-get( $map: $wsui-toast-options, $key: duration );
 
   min-width: $min-width;
   max-width: $max-width;
@@ -58,12 +40,12 @@ $webkit-sassui-toast-options: (
   transform: translate(-50%, -50%);
   color: #fff;
 
-  @keyframes webkit-sassui-toast-fade-in {
+  @keyframes wsui-toast-fade-in {
     to {
       background: rgba(#000, $opacity);
     }
   }
-  @keyframes webkit-sassui-toast-fade-out {
+  @keyframes wsui-toast-fade-out {
     from {
       background: rgba(#000, $opacity);
     }
@@ -75,13 +57,13 @@ $webkit-sassui-toast-options: (
   &.visible-true,
   &[data-visible="true"] {
     background: rgba(#000, 0);
-    animation: webkit-sassui-toast-fade-in $duration ease-in forwards;
+    animation: wsui-toast-fade-in $duration ease-in forwards;
   }
 
   &,
   &.visible-false,
   &[data-visible="false"] {
-    animation: webkit-sassui-toast-fade-out $duration ease-in forwards;
+    animation: wsui-toast-fade-out $duration ease-in forwards;
   }
 }
-/*webkit-sassui-toast End*/
+/*wsui-toast End*/

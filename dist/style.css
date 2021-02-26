@@ -1,0 +1,55 @@
+/*!
+ * name: @jswork/wsui-toast
+ * description: Toast sass style.
+ * homepage: https://github.com/afeiship/wsui-toast
+ * version: 1.0.0
+ * date: 2021-02-26 21:43:56
+ * license: MIT
+ */
+/*wsui-toast Start*/
+.wsui-toast {
+  min-width: 100px;
+  max-width: 300px;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  top: 38.2%;
+  left: 50%;
+  position: fixed;
+  font-size: 14px;
+  z-index: 90;
+  transform: translate(-50%, -50%);
+  color: #fff; }
+
+@-webkit-keyframes wsui-toast-fade-in {
+  to {
+    background: rgba(0, 0, 0, 0.8); } }
+
+@keyframes wsui-toast-fade-in {
+  to {
+    background: rgba(0, 0, 0, 0.8); } }
+
+@-webkit-keyframes wsui-toast-fade-out {
+  from {
+    background: rgba(0, 0, 0, 0.8); }
+  to {
+    background: rgba(0, 0, 0, 0); } }
+
+@keyframes wsui-toast-fade-out {
+  from {
+    background: rgba(0, 0, 0, 0.8); }
+  to {
+    background: rgba(0, 0, 0, 0); } }
+  .wsui-toast.visible-true, .wsui-toast[data-visible="true"] {
+    background: rgba(0, 0, 0, 0);
+    -webkit-animation: wsui-toast-fade-in 300ms ease-in forwards;
+            animation: wsui-toast-fade-in 300ms ease-in forwards; }
+  .wsui-toast, .wsui-toast.visible-false, .wsui-toast[data-visible="false"] {
+    -webkit-animation: wsui-toast-fade-out 300ms ease-in forwards;
+            animation: wsui-toast-fade-out 300ms ease-in forwards; }
+
+/*wsui-toast End*/
